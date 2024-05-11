@@ -1,0 +1,133 @@
+@font-face {
+    font-family: nt;
+    src: url(/font/Inter-Black.otf);
+}
+@font-face {
+    font-family: lx;
+    src: url(/font/Lalezar-Regular.ttf);
+}
+
+
+
+:root{
+    --bg--sky--100:#22ABFB;
+    --bg--sky--op1--100:#E2F4FE;
+    --bg--sky--op1--200:#f0f9fd;
+    --bg--pink--100:#F665AD;
+    --bg--white--100:#FFFFFF;
+    --bg--sky-pink--100:#52ACAC;
+    --bg--gray---100:rgb(196, 196, 196);
+    --bg--gray---200:rgb(224, 224, 224);
+    --bg--gray---300:#F1F1F1;
+}
+
+.atag{
+    color: black;
+    text-decoration: none;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.header{
+    height: 5.208vw;
+    width: 100%;
+    background-color: var(--bg--white--100);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.header .image img{
+    width: 15.486vw;
+    height: 5.106vw;
+    margin-left: 1.5vw;
+}
+.header nav{
+    position: relative;
+    left: 55vw;
+    font-size: 1vw;
+}
+.header nav ul{
+    display: flex;
+    gap: 3.472vw;
+}
+.header nav ul li{
+    list-style-type: none;
+}
+.header nav ul li a{
+    position: relative;
+    text-decoration: none;
+    font-family: nt;
+    transition: 0.6s;
+}
+.header nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--bg--sky--100);
+    transition: width 0.3s ease;
+}.header nav ul li a:hover{
+    color: var(--bg--sky--100);
+}
+.header nav ul li a:hover::after{
+    width: 100%;
+}
+.page1{
+    width: 100%;
+    height: 800px;
+    background-color: var(--bg--sky--op1--100);
+    text-align: center;
+    
+}
+.page1 form h1{
+    font-size: 80px;
+    font-family: lx;
+}
+.page1 form div input{
+    width: 50vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 1vw;
+    background-color:var(--bg--gray---300) ;
+    outline: none;
+    margin-top: 2vw;
+    color: black;
+    font-family: lx;
+    font-size: 1vw;
+}
+.page1 form div input::placeholder{
+    color: black;
+    font-family: lx;
+    font-size: 1vw;
+}
+.page1 form button{
+    width: 50vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 1vw;
+    background-color:var(--bg--sky--100) ;
+    outline: none;
+    margin-top: 2vw;
+    font-size: 43px;
+    padding: 0px;
+    font-family: lx;
+}
+.sing_up{
+    font-family: lx;
+}

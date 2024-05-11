@@ -1,0 +1,359 @@
+
+@font-face {
+    font-family: nt;
+    src: url(/font/Inter-Black.otf);
+}
+@font-face {
+    font-family: lx;
+    src: url(/font/Lalezar-Regular.ttf);
+}
+
+
+
+:root{
+    --bg--sky--100:#22ABFB;
+    --bg--sky--op1--100:#E2F4FE;
+    --bg--sky--op1--200:#f0f9fd;
+    --bg--pink--100:#F665AD;
+    --bg--white--100:#FFFFFF;
+    --bg--sky-pink--100:#52ACAC;
+    --bg--gray---100:rgb(196, 196, 196);
+    --bg--gray---200:rgb(224, 224, 224);
+    --bg--gray---300:#F1F1F1;
+}
+
+.atag{
+    color: black;
+    text-decoration: none;
+}
+
+
+@keyframes text-an {
+    0%{
+        margin-top: 1vw;
+        opacity: 0;
+    }
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.header{
+    height: 5.208vw;
+    width: 100%;
+    background-color: var(--bg--white--100);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.header .image img{
+    width: 15.486vw;
+    height: 5.106vw;
+    margin-left: 1.5vw;
+}
+.header nav{
+    position: relative;
+    left: 55vw;
+    font-size: 1vw;
+}
+.header nav ul{
+    display: flex;
+    gap: 3.472vw;
+}
+.header nav ul li{
+    list-style-type: none;
+}
+.header nav ul li a{
+    position: relative;
+    text-decoration: none;
+    font-family: nt;
+    transition: 0.6s;
+}
+.header nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--bg--sky--100);
+    transition: width 0.3s ease;
+  }.header nav ul li a:hover{
+    color: var(--bg--sky--100);
+  }
+  .header nav ul li a:hover::after{
+    width: 100%;
+  }
+/* ...............page1............... */
+
+.page1{
+    height: 41.667vw;
+    width: 100%;
+    background-color: var(--bg--sky--op1--100);
+    display: flex;
+}
+
+.page1 .left{
+    width: 60%;
+    height: 100%;
+    margin-left: 5vw;
+    padding-top: 7vw;
+    animation: text-an 0.5s linear 0s;
+}
+.page1 .left h1{
+    font-family: lx;
+    color: var(--bg--sky--100);
+    font-size: 70px;
+}
+.page1 .left h1 span{
+    color: var(--bg--pink--100);
+}
+.page1 .left p{
+    font-family: lx;
+    font-size: 23px;
+    color: var(--bg--sky-pink--100);
+}
+.page1 .left p span{
+    color: var(--bg--pink--100);
+}
+.page1 .left button{
+    background-color: var(--bg--pink--100);
+    height: 50px;
+    width: 180px;
+    border: none;
+    margin-top: 20px;
+    font-size: 23px;
+    font-family: lx;
+    color: var(--bg--white--100);
+    padding: 10px 10px;
+    border-radius: 16px;
+}
+.page1 .left button:hover{
+    background-color: var(--bg--sky--100);
+}
+.page1 .right{
+    width:50%;
+    height: 100%;
+}
+.page1 .right img{
+    margin-left: 4vw;
+    margin-top: 6vw;
+}
+/* ...............page2............... */
+
+.page2{
+    height: 41.667vw;
+    width: 100%;
+    background-color: var(--bg--white--100);
+    display: flex;
+}
+.page2 .left{
+    width: 50%;
+    height: 100%;
+}
+.page2 .left img{
+    margin-left: 3vw;
+    margin-top: 4vw;
+    width: 33vw;
+}
+.page2 .right{
+    width:60%;
+    height: 100%;
+    margin-left: 5vw;
+    padding-top: 7vw;
+    animation: text-an 0.5s linear 0s;
+}
+.page2 .right h1{
+    font-family: lx;
+    color: var(--bg--sky--100);
+    font-size: 70px;
+}
+.page2 .right h1 span{
+    color: var(--bg--pink--100);
+}
+.page2 .right p{
+    font-family: lx;
+    font-size: 23px;
+    color: var(--bg--sky-pink--100);
+}
+.page2 .right p span{
+    color: var(--bg--pink--100);
+}
+.page2 .right button{
+    background-color: var(--bg--pink--100);
+    height: 50px;
+    width: 180px;
+    border: none;
+    margin-top: 20px;
+    font-size: 23px;
+    font-family: lx;
+    color: var(--bg--white--100);
+    padding: 10px 10px;
+    border-radius: 16px;
+}
+
+.page2 .right button:hover{
+    background-color: var(--bg--sky--100);
+}
+/* ...............page3............... */
+
+.page3{
+    height: 41.667vw;
+    width: 100%;
+    background-color: var(--bg--sky--op1--200);
+    display: flex;
+    align-items: center;
+}
+.page3 .all-con{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10vw;
+}
+.page3 .all-con .con-1{
+    background-color: var(--bg--gray---100);
+    height: 22vw;
+    width: 22vw;
+    border-radius: 25px;
+    border:none;
+    text-align: center;
+    /* margin-left: 4vw; */
+}
+.page3 .all-con .con-1:hover{
+    background-color: var(--bg--gray---200);
+}
+.page3 .all-con .con-1 img{
+    margin-top: 3vw;
+    height: 120px;
+}
+.page3 .all-con .con-1 h1{
+    font-size: 35px;
+    font-family: lx;
+    margin-top: 0.5vw;
+}
+.page3 .all-con .con-1 p{
+    font-size: 25px;
+    font-family: lx;
+    margin-top: 0.5vw;
+}
+/* ...............page4............... */
+.page4{
+    height: 41.667vw;
+    width: 100%;
+    background-color: var(--bg--white--100);
+    display: flex;
+}
+.page4 .contact-us{
+    margin-left: 3vw;
+}
+.page4 .contact-us form h1{
+    font-size: 80px;
+    font-family: lx;
+}
+.page4 .contact-us form input{
+    width: 50vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 1vw;
+    background-color:var(--bg--gray---300) ;
+    outline: none;
+    margin-top: 2vw;
+}
+.page4 .contact-us form input::placeholder{
+    color: black;
+    font-family: lx;
+    font-size: 1vw;
+}
+.message{
+    height: 7vw;
+}
+.message::placeholder{
+    position: relative;
+    bottom: 2vw;
+}
+.page4 .contact-us form button{
+    width: 50vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 1vw;
+    background-color:var(--bg--sky--100) ;
+    outline: none;
+    margin-top: 2vw;
+    font-size: 43px;
+    padding: 0px;
+    font-family: lx;
+}
+/* ...............futter............... */
+.futter{
+    height: 18.75vw;
+    width: 100%;
+    background-color: black;
+    padding: 2vw;
+    display: flex;
+    color: var(--bg--white--100);
+    font-family: nt;
+    gap: 5vw;
+}
+.futter div ul{
+    margin-left: 15vw;
+}
+.futter div ul li{
+    list-style-type: none;
+    margin-top: 2vw;
+}
+.futter div ul li a{
+    position: relative;
+    text-decoration: none;
+    font-family: nt;
+    transition: 0.6s;
+    color: var(--bg--white--100);
+    font-size: 1.5vw;
+    
+}
+.futter div ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--bg--sky--100);
+    transition: width 0.3s ease;
+}
+.futter div ul li a:hover{
+    color: var(--bg--sky--100);
+}
+.futter div ul li a:hover::after{
+    width: 100%;
+}
+.futter img{
+    height: 250px;
+    margin-top: 2vw;
+}
+.futter div h1{
+    margin-top: 2vw;
+    font-size: 1.5vw;
+}
+.futter div a img{
+    width: 6vw;
+    height: 6vw;
+}
+.sm-icon{
+    display: block;
+    width: 100px;
+    
+}
