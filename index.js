@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken")
 const contactmodul = require("./model/contsc");
 const usermodul = require("./model/user");
 const cookieParser = require("cookie-parser");
-
+const port = process.env.PORT || 3000;
 
 const token = "blog$maruf$mursalin"
 
@@ -96,4 +96,4 @@ function islogin (req,res,next){
 
 
 
-app.listen(3000);
+app.listen(port);
